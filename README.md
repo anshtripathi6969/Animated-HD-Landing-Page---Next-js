@@ -2,7 +2,8 @@
 
 A high-performance, futuristic SaaS landing page built with **Next.js 16**, **Tailwind CSS v4**, and **GSAP**. This project pushes the boundaries of web interactivity with "God-Tier" animations, holographic effects, and a cinematic user experience.
 
-![Project Thumbnail](https://github.com/anshtripathi6969/Animated-HD-Landing-Page---Next-js/assets/placeholder.png)
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/59468c47-b185-42e5-bca3-c3d039506cf3" />
+
 
 ## 🚀 Features
 
@@ -86,6 +87,8 @@ Uses React refs and GSAP's `quickTo` to calculate mouse position relative to the
 ## 📝 License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+I am not promoting any product , just showcasing my skills!
 
 ---
 
