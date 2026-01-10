@@ -1,4 +1,4 @@
-# NeonSaaS - God-Tier Animated Landing Page ⚡- https://dynamic-landing-page-peach.vercel.app
+# NeonSaaS - God-Tier Animated Landing Page ⚡
 
 A high-performance, futuristic SaaS landing page built with **Next.js 16**, **Tailwind CSS v4**, and **GSAP**. This project pushes the boundaries of web interactivity with "God-Tier" animations, holographic effects, and a cinematic user experience.
 
