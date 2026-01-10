@@ -1,36 +1,92 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NeonSaaS - God-Tier Animated Landing Page ⚡
 
-## Getting Started
+A high-performance, futuristic SaaS landing page built with **Next.js 16**, **Tailwind CSS v4**, and **GSAP**. This project pushes the boundaries of web interactivity with "God-Tier" animations, holographic effects, and a cinematic user experience.
 
-First, run the development server:
+![Project Thumbnail](https://github.com/anshtripathi6969/Animated-HD-Landing-Page---Next-js/assets/placeholder.png)
+
+## 🚀 Features
+
+### **"God-Tier" Animations**
+*   **Holographic Feature Cards**: Interactive 3D tilt with rotating "Border Beam" lights and crushed-glass backgrounds.
+*   **Magnetic Interactions**: Buttons and cursors that snap to elements with physics-based elasticity.
+*   **Cinematic Preloader**: A "Hyper-Spaced" entrance sequence that shatters the screen to reveal content.
+*   **Spotlight Grid**: Mouse-following spotlight effects that reveal the underlying grid structure.
+*   **Hacker Text Scramble**: Cyberpunk-style text decoding effects on headers.
+*   **Parallax Scrolling**: Deep, multi-layered parallax effects on background elements.
+
+### **Core UI/UX**
+*   **Smooth Scrolling**: Integrated `Lenis` for a luxury, weighted scroll feel.
+*   **Smart Navbar**: Glassmorphic, scroll-aware navigation that hides/shows intelligently.
+*   **Glassmorphism**: Advanced blur and saturation filters for a premium frosted glass look.
+*   **Responsive**: Fully optimized for mobile, tablet, and desktop.
+
+## 🛠️ Tech Stack
+
+*   **Framework**: [Next.js 16 (App Router)](https://nextjs.org/)
+*   **Language**: [TypeScript](https://www.typescriptlang.org/)
+*   **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+*   **Animation**: 
+    *   [GSAP](https://gsap.com/) (GreenSock Animation Platform)
+    *   [ScrollTrigger](https://gsap.com/docs/v3/Plugins/ScrollTrigger/)
+    *   [Lenis](https://lenis.darkroom.engineering/) (Smooth Scroll)
+*   **Icons**: [Lucide React](https://lucide.dev/)
+*   **Fonts**: `Inter` & `Space Grotesk`
+
+## 📦 Getting Started
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/anshtripathi6969/Animated-HD-Landing-Page---Next-js.git
+    cd landing-page
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Open locally:**
+    Visit [http://localhost:3000](http://localhost:3000) to see the magic.
+
+## 📂 Project Structure
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+src/
+├── app/
+│   ├── globals.css      # Global styles, variables, & tailwind 
+│   ├── layout.tsx       # Root layout with SmoothScroll provider
+│   └── page.tsx         # Main landing page composition
+├── components/          # Reusable UI components
+│   ├── Features.tsx     # The "God-Tier" holographic cards
+│   ├── Hero.tsx         # Main entrance with magnetic buttons
+│   ├── Navbar.tsx       # Smart scroll-aware navigation
+│   ├── ProductDemo.tsx  # 3D dashboard with scrub animation
+│   └── ...
+└── lib/
+    └── utils.ts         # CN utility for class merging
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Custom Effects Explained
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### **The "Border Beam"**
+A custom CSS animation in `globals.css` that rotates a conic gradient behind a masked container to create a perpetual moving light effect on card borders.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### **Magnetic Button**
+Uses React refs and GSAP's `quickTo` to calculate mouse position relative to the button center, applying a translation force that "pulls" the button towards the cursor.
 
-## Learn More
+## 📝 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is open source and available under the [MIT License](LICENSE).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Currently built by **Ansh Tripathi**.
