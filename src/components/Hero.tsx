@@ -18,26 +18,40 @@ export function Hero() {
     // Hacker Scramble Effect
     useGSAP(() => {
         const targetText = "Build the Future";
-        let iterations = 0;
 
-        const interval = setInterval(() => {
-            setScrambleText(targetText.split("")
-                .map((letter, index) => {
-                    if (index < iterations) {
-                        return targetText[index];
-                    }
-                    return chars[Math.floor(Math.random() * chars.length)];
-                })
-                .join(""));
+        const scramble = () => {
+            let iterations = 0;
+            const interval = setInterval(() => {
+                setScrambleText(targetText.split("")
+                    .map((letter, index) => {
+                        if (index < iterations) {
+                            return targetText[index];
+                        }
+                        return chars[Math.floor(Math.random() * chars.length)];
+                    })
+                    .join(""));
 
-            if (iterations >= targetText.length) {
-                clearInterval(interval);
-            }
+                if (iterations >= targetText.length) {
+                    clearInterval(interval);
+                }
 
-            iterations += 1 / 3; // Speed
-        }, 30);
+                iterations += 1 / 3; // Speed
+            }, 30);
+        };
 
-        return () => clearInterval(interval);
+        // Initial delay to wait for Preloader (4s)
+        const startTimeout = setTimeout(() => {
+            scramble(); // First run
+
+            // Start the 10s loop
+            const loopInterval = setInterval(scramble, 10000);
+
+            // Cleanup function for the interval
+            return () => clearInterval(loopInterval);
+        }, 3500); // 3.5s to sync perfectly with 3.8s boot
+
+        // Cleanup function for the timeout
+        return () => clearTimeout(startTimeout);
     }, []);
 
     useGSAP(() => {
