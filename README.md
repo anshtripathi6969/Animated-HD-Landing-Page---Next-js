@@ -88,6 +88,8 @@ Uses React refs and GSAP's `quickTo` to calculate mouse position relative to the
 
 This project is open source and available under the [MIT License](LICENSE).
 
+I am not promoting any product , just showcasing my skills!
+
 ---
 
 Currently built by **Ansh Tripathi**.
