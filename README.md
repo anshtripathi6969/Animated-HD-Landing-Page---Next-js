@@ -5,7 +5,7 @@ A high-performance, futuristic SaaS landing page built with **Next.js 16**, **Ta
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/59468c47-b185-42e5-bca3-c3d039506cf3" />
 
 
-## 🚀 Features
+## 🚀 Features!
 
 ### **"God-Tier" Animations**
 *   **Holographic Feature Cards**: Interactive 3D tilt with rotating "Border Beam" lights and crushed-glass backgrounds.
